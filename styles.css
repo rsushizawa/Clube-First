@@ -111,6 +111,7 @@ header a{
     flex-direction: column;
     align-items: center;
 
+    padding-bottom: 100px;
     font-family: Inter;
 }
 
@@ -119,7 +120,7 @@ header a{
 }
 
 .escolha span{
-    background-image: linear-gradient(#0D249F5E 39%, #00031F6B 42%);
+    background: linear-gradient(#0D249F5E 39%, #00031F6B 42%);
 }
 
 .escolha p{
@@ -130,8 +131,28 @@ header a{
 .escolha button{
     width: 131.94px;
     height: 30px;
-    padding: 6.63px 13px 7.38px 28.97px;
-    gap: 0px;
+    padding: 0;
     border-radius: 16px;
-    border: 1px 0px 0px 0px;
+    border: 1px solid #41475d;
+    color: #FFFFFF;
+    font-family: Inter;
+    background: linear-gradient(90deg, #080E43CF 81%, #080E4382 19%);
+}
+.clubes{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF;
+}
+.card li{
+    list-style-image: url(icones/lista.svg);
 }
