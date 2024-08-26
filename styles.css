@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .bungee-inline-regular {
     font-family: "Bungee Inline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.alfa-slab-one-regular {
-    font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -26,8 +20,13 @@ body{
 
     align-items: center;
 
-    background-color: #05010D;
+    background-color: #020617;
     color: #FFFFFF;
+}
+
+header{
+    width: 100vw;
+    background-color: #040714;
 }
 
 header ul{
@@ -36,7 +35,7 @@ header ul{
 }
 
 header li{
-    font-family: "Alfa Slab One";
+    font-family: Inter;
     padding: 10px;
     list-style: none;
 }
@@ -51,10 +50,12 @@ header a{
     flex-direction: column;
     align-items: center;
 
+    width: 100vw;
+
     padding-top: 100px;
     padding-bottom: 300px;
 
-    background: radial-gradient(farthest-side at 50% 50%,#152768 ,#05010D);
+    background: radial-gradient(closest-side at 50% 50%,#252641 ,#020617);
 }
 
 .banner h1{
@@ -67,7 +68,7 @@ header a{
 }
 
 .banner h2{
-    font-family: "Alfa Slab One", serif;
+    font-family: Inter;
     line-height: 72px;
     font-size: 40px;
 
@@ -81,22 +82,19 @@ header a{
     height: 34px;
     top: 979.31px;
     left: 698.75px;
-    padding: 9px 5.09px 10px 10px;
-    gap: 0px;
-    border-radius: 6px;
-    border: 3px solid #41475d;
-    opacity: 0px;
-    transition: 0.1s ease-in-out;
-}
-
-.banner h6{
-    font-family: "Inter";
-    color: #595C68;
+    font-family: Inter;
+    border: 1px solid transparent;
+    border-radius: 12px;
 }
 
 .banner button:hover{
     background-color: transparent;
     color: white;
+}
+
+.banner h6{
+    font-family: "Inter";
+    color: #595C68;
 }
 
 
@@ -107,6 +105,9 @@ header a{
 }
 
 .escolha{
+
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,12 +116,8 @@ header a{
     font-family: Inter;
 }
 
-.escolha h1{
-    
-}
-
 .escolha span{
-    background: linear-gradient(#0D249F5E 39%, #00031F6B 42%);
+    color: #1e3a8a;
 }
 
 .escolha p{
@@ -136,11 +133,18 @@ header a{
     border: 1px solid #41475d;
     color: #FFFFFF;
     font-family: Inter;
-    background: linear-gradient(90deg, #080E43CF 81%, #080E4382 19%);
+    background-color: #080E43CF;
+}
+.escolha button:hover{
+    background-color: transparent;
+    color: #FFFFFF;
 }
 .clubes{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+    width: 100vw;
 }
 
 .card{
@@ -151,8 +155,54 @@ header a{
     padding: 20px;
     margin: 10px;
     border-radius: 12px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff10;
+    background-color: #111827;
+    font-family: Inter;
+    width: 300px;
+    height: 400px;
 }
+.card h2{
+    display: block;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    
+}
+
 .card li{
     list-style-image: url(icones/lista.svg);
+    color: #FFFFFF99;
+}
+.card h5{
+    align-self: flex-start;
+    color: #FFFFFF99;
+}
+.card button{
+    justify-self: flex-end;
+
+    width: 230.85px;
+    height: 34px;
+    top: 452px;
+    left: 41px;
+    border-radius: 6px;
+    border: 3px solid #41475d;
+}
+#astronomia{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#astronomia::after{
+    content: '';
+    position: absolute;
+    height: 102%;
+    width: 103%;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #052DFF99,#3EF3FF99);
+    z-index: -1;
+}
+
+#astronomia li{
+    color: #56C2FF;
+    list-style-image: url(icones/lista-azul.svg);
 }
