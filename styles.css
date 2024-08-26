@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.inter-one {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+  
+  
+body{
+    background-color: #05010D;
+    color: #FFFFFF;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+}
+
+header li{
+    font-family: "Alfa Slab One";
+    padding: 10px;
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner{
+    padding-top: 100px;
+    background-image: radial-gradient(#152768,#05010D);
+    background-repeat: no-repeat;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1{
+    font-family: "Bungee Inline", sans-serif;
+    font-size: 72.4px;
+
+    background: linear-gradient(to right, #FFFFFF, #9BD0F5);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+.banner h2{
+    font-family: "Alfa Slab One", serif;
+    line-height: 72px;
+    font-size: 40px;
+
+    background: linear-gradient(to right, #FFFFFF, #9BD0F5);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+.banner button{
+    width: 147.09px;
+    height: 34px;
+    top: 979.31px;
+    left: 698.75px;
+    padding: 9px 5.09px 10px 10px;
+    gap: 0px;
+    border-radius: 6px;
+    border: 3px solid #41475d;
+    opacity: 0px;
+    transition: 0.1s ease-in-out;
+}
+.banner button:hover{
+    background-color: transparent;
+    color: white;
+}
+.banner h6{
+    font-family: "Inter";
+    color: #595C68;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+
