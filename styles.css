@@ -15,13 +15,17 @@
 .inter-one {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
 }
   
   
-  
 body{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
     background-color: #05010D;
     color: #FFFFFF;
 }
@@ -43,17 +47,14 @@ header a{
 }
 
 .banner{
-    padding-top: 100px;
-    background-image: radial-gradient(#152768,#05010D);
-    background-repeat: no-repeat;
-    position: absolute;
-
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+    background: radial-gradient(farthest-side at 50% 50%,#152768 ,#05010D);
 }
 
 .banner h1{
@@ -62,8 +63,9 @@ header a{
 
     background: linear-gradient(to right, #FFFFFF, #9BD0F5);
     -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
 }
+
 .banner h2{
     font-family: "Alfa Slab One", serif;
     line-height: 72px;
@@ -73,6 +75,7 @@ header a{
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text; 
 }
+
 .banner button{
     width: 147.09px;
     height: 34px;
@@ -85,14 +88,17 @@ header a{
     opacity: 0px;
     transition: 0.1s ease-in-out;
 }
-.banner button:hover{
-    background-color: transparent;
-    color: white;
-}
+
 .banner h6{
     font-family: "Inter";
     color: #595C68;
 }
+
+.banner button:hover{
+    background-color: transparent;
+    color: white;
+}
+
 
 .icones{
     display: flex;
@@ -100,4 +106,32 @@ header a{
     gap: 6rem;
 }
 
+.escolha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    font-family: Inter;
+}
+
+.escolha h1{
+    
+}
+
+.escolha span{
+    background-image: linear-gradient(#0D249F5E 39%, #00031F6B 42%);
+}
+
+.escolha p{
+    color:#FFFFFF;
+    opacity: 60%;
+}
+
+.escolha button{
+    width: 131.94px;
+    height: 30px;
+    padding: 6.63px 13px 7.38px 28.97px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+}
