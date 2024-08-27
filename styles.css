@@ -143,6 +143,7 @@ header a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 300px;
 
     width: 100vw;
 }
@@ -158,14 +159,12 @@ header a{
     border: 1px solid #ffffff10;
     background-color: #111827;
     font-family: Inter;
-    width: 300px;
+    width: 275px;
     height: 400px;
 }
 .card h2{
-    display: block;
     padding-bottom: 40px;
-    border-bottom: 1px solid white;
-    
+    border-bottom: 1px solid white; 
 }
 
 .card li{
@@ -205,4 +204,62 @@ header a{
 #astronomia li{
     color: #56C2FF;
     list-style-image: url(icones/lista-azul.svg);
+}
+
+.caixas{
+    display: flex;
+
+    justify-content: space-between;
+    gap: 50px;
+
+    padding-bottom: 200px;
+}
+
+.container{
+    padding: 42px;
+    background-color: #111827;
+    font-family: Inter;
+    border-radius: 12px;
+    width:300px;;
+    height: 300;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #0f172a;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    width: 500px;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+}
+.item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 20px;
+}
+.item h2{
+    font-size: 16px;
+    font-family: Inter;
+}
+.item li{
+    list-style: none;
+}
+.item a{
+    text-decoration: none;
+    color: #595C68;
+    font-family: Inter;
+}
+.item a:hover{
+    color: white;
 }
