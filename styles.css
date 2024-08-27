@@ -144,7 +144,7 @@ header a{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 300px;
-
+    flex-wrap: wrap;
     width: 100vw;
 }
 
@@ -154,13 +154,15 @@ header a{
     align-items: center;
 
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 12px;
     border: 1px solid #ffffff10;
     background-color: #111827;
     font-family: Inter;
     width: 275px;
     height: 400px;
+
+    transition-duration: 0.3s;
 }
 .card h2{
     padding-bottom: 40px;
@@ -185,6 +187,15 @@ header a{
     border-radius: 6px;
     border: 3px solid #41475d;
 }
+
+.card button:hover{
+    background-color: #020617;
+    color: white;
+}
+
+.card:hover{
+    transform: scale(1.1) rotate(2deg);
+}
 #astronomia{
     position: relative;
     display: flex;
@@ -208,8 +219,8 @@ header a{
 
 .caixas{
     display: flex;
-
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
 
     padding-bottom: 200px;
@@ -228,6 +239,8 @@ footer{
     display: flex;
     flex-direction: row;
 
+    width: 100vw;
+    padding-top: 70px;
     background-color: #0f172a;
 }
 .mail{
@@ -235,6 +248,8 @@ footer{
     flex-direction: column;
     font-family: Inter;
     width: 500px;
+
+    padding-left: 100px;
 }
 .boxes{
     display: flex;
@@ -244,6 +259,7 @@ footer{
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     width: 200px;
     padding: 20px;
@@ -262,4 +278,81 @@ footer{
 }
 .item a:hover{
     color: white;
+}
+
+
+
+.text h1{
+    font-size: 21px;
+}
+.text h4{
+    font-size: 14px;
+    color: #595C68;
+}
+.email h1{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+}
+.email textarea{
+    border-radius: 12px;
+    width: 300px;
+    background-color: #0f172a;
+    color: white;
+}
+
+.send-btn{
+    position: relative;
+}
+
+.send-btn button{
+    background-color: #595C68;
+    border-radius: 1000px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    position: absolute;
+    left: 100x;
+}
+@media  screen and (max-width: 980px) {
+    .caixas{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .mail{
+        flex-direction: row;
+    }
+    .email{
+        max-width: 300px;
+    }
+    .text{
+        max-width: 800px;
+        padding-right: 100px;
+    }
+    .boxes{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 500px;
+    }
+}
+
+@media  screen and (max-width: 798px) {
+    .caixas{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .boxes{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 500px;
+    }
 }
