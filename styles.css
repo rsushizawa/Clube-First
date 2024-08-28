@@ -8,14 +8,18 @@
 .inter-one {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 4600;
     font-style: normal;
 }
+html {
+    scroll-behavior:smooth;
+} 
   
   
 body{
     display: flex;
     flex-direction: column;
+
 
     align-items: center;
     padding: 0;
@@ -56,15 +60,16 @@ header a{
 
     width: 100vw;
 
-    padding-top: 100px;
-    padding-bottom: 300px;
+    padding-top: 300px;
 
     background: radial-gradient(closest-side at 50% 50%,#252641 ,#020617);
 }
 
 .banner h1{
     font-family: "Bungee Inline";
-    font-size: 72.4px;
+    font-size: 45px;
+    padding-top: 10px;
+    margin: 0;
 
     background: linear-gradient(to right, #FFFFFF, #9BD0F5);
     -webkit-text-fill-color: transparent; 
@@ -74,7 +79,9 @@ header a{
 .banner h2{
     font-family: Inter;
     line-height: 72px;
-    font-size: 40px;
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
 
     background: linear-gradient(to right, #FFFFFF, #9BD0F5);
     -webkit-text-fill-color: transparent; 
@@ -105,7 +112,7 @@ header a{
 .icones{
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 40px;
 }
 
 .escolha{
@@ -115,18 +122,25 @@ header a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding-bottom: 100px;
+    padding-top: 150px;
     font-family: Inter;
 }
 
 .escolha span{
     color: #1e3a8a;
+    padding: 0;
 }
-
-.escolha p{
+.escolha h1{
+    font-size: 20px;
+    padding: 0;
+}
+.escolha h2{
+    padding-top: 0;
     color:#FFFFFF;
-    opacity: 60%;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .escolha button{
@@ -144,15 +158,15 @@ header a{
     color: #FFFFFF;
 }
 .clubes{
+    padding-top: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 300px;
     flex-wrap: wrap;
     width: 100vw;
 }
 
-.card{
+.clubes .card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,20 +182,20 @@ header a{
 
     transition-duration: 0.3s;
 }
-.card h2{
+.clubes .card h2{
     padding-bottom: 40px;
     border-bottom: 1px solid white; 
 }
 
-.card li{
+.clubes .card li{
     list-style-image: url(icones/lista.svg);
     color: #FFFFFF99;
 }
-.card h5{
+.clubes .card h5{
     align-self: flex-start;
     color: #FFFFFF99;
 }
-.card button{
+.clubes .card button{
     justify-self: flex-end;
 
     width: 230.85px;
@@ -192,21 +206,21 @@ header a{
     border: 3px solid #41475d;
 }
 
-.card button:hover{
+.clubes .card button:hover{
     background-color: #020617;
     color: white;
 }
 
-.card:hover{
+.clubes .card:hover{
     transform: scale(1.1) rotate(2deg);
 }
-#astronomia{
+.clubes #astronomia{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#astronomia::after{
+.clubes #astronomia::after{
     content: '';
     position: absolute;
     height: 102%;
@@ -216,21 +230,23 @@ header a{
     z-index: -1;
 }
 
-#astronomia li{
+.clubes #astronomia li{
     color: #56C2FF;
     list-style-image: url(icones/lista-azul.svg);
 }
+
+/*caixas*/
 
 .caixas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
-.container{
+.caixas .container{
     padding: 42px;
     background-color: #111827;
     font-family: Inter;
@@ -239,28 +255,64 @@ header a{
     height: 300;
 }
 
+/*Footer*/
+
 footer{
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
     padding-top: 70px;
     background-color: #0f172a;
 }
-.mail{
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    width: 500px;
-
-    padding-left: 100px;
-}
-.boxes{
+footer .mail{
     display: flex;
     flex-direction: row;
-}
-.item{
+    gap: 20px;
+    justify-content: center;
+    font-family: Inter;
 
+    padding-left: 20px;
+}
+footer .email h1{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+}
+footer .email textarea{
+    padding-top: 5px;
+    padding-left: 3px;
+    border-radius: 12px;
+    width: 170px;
+    height: 15px;
+    background-color: #0f172a;
+    color: gray;
+    position: relative;
+}
+footer button{
+    margin-left: 10px;
+    background-color: #595C68;
+    border-radius: 1000px;
+    border: 1px solid gray;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    padding-top: 3px;
+    position: absolute;
+    left: 100x;
+}
+footer button:hover{
+    background-color: #020617;
+}
+
+footer .boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+footer .item{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -268,111 +320,50 @@ footer{
     width: 200px;
     padding: 20px;
 }
-.item h2{
+footer .item h2{
     font-size: 16px;
     font-family: Inter;
 }
-.item li{
+footer .item li{
     list-style: none;
 }
-.item a{
+footer .item a{
     text-decoration: none;
     color: #595C68;
     font-family: Inter;
 }
-.item a:hover{
+footer .item a:hover{
     color: white;
 }
-
-
-
-.text h1{
+footer .text h1{
     font-size: 21px;
 }
-.text h4{
+footer .text h4{
     font-size: 14px;
     color: #595C68;
 }
-.email h1{
-    font-size: 16px;
-    font-weight: 300;
-    max-width: 400px;
-}
-.email textarea{
-    padding-top: 15px;
-    padding-left: 10px;
-    border-radius: 12px;
-    width: 300px;
-    background-color: #0f172a;
-    color: gray;
-}
 
-.send-btn{
-    position: relative;
+#contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
 }
-
-.send-btn button{
-    background-color: #595C68;
-    border-radius: 1000px;
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    position: absolute;
-    left: 100x;
-}
-#contatos ul{
+footer #contatos ul{
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
-#contatos a{
+footer #contatos a{
     font-size: 14px;
     font-family: Inter;
     text-decoration: none;
     color: #595C68;
 }
-#contatos a:hover{
+footer #contatos a:hover{
     color: white;
-}
-@media  screen and (max-width: 980px) {
-    .caixas{
-        flex-direction: column;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .mail{
-        flex-direction: row;
-    }
-    .email{
-        max-width: 300px;
-    }
-    .text{
-        max-width: 800px;
-        padding-right: 100px;
-    }
-    .boxes{
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-height: 500px;
-    }
-}
-
-@media  screen and (max-width: 798px) {
-    .caixas{
-        flex-direction: column;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .text{
-        flex-direction: column;
-    }
-    .boxes{
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-height: 500px;
-    }
 }
 
 /*Sobre Nós*/
@@ -394,25 +385,75 @@ footer{
     font-family: Bungee Inline;
     color: #c1ddfe;
 }
-
+.sobre{
+    padding-bottom: 200px;
+}
 .sobre-container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    font-family: Inter;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .sobre-container div{
     max-width: 400px;
 }
-;
-.sobre-container div a{
+.sobre-container p{
+    color: #595C68;
+}
+.sobre-container a{
     text-decoration: none;
-
+    color: white;
 }
 .top-sobre-container{
     display: flex;
     flex-direction: row;
 }
+.top-sobre-container img{
+    padding-right: 10px;
+}
 .imagens{
-    width: 200px;
-    padding-left: 100px;
+    width: 150px;
+}
+
+
+@media  (min-width: 780px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .boxes{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 500px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .mail{
+        justify-content: space-between;
+    }
+
+    #title{
+        padding-left: px;
+    }
+    .sobre-container div{
+        max-width: 700px;
+    }
+    .imagens{
+        width: 200px;
+        padding-left: 100px;
+    }
 }

@@ -15,66 +15,151 @@
     <header>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">Projeto First</a>
-                </li>
-                <li>
-                    <a href="sobre.html">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="#clubes">Clubes</a>
-                </li>
-                <li>
-                    <a href="#contatos">Contatos</a>
-                </li>
+                <li><a href="index.html">Projeto First</a></li>                
+                <li><a href="#calendario">Calendário Olimpico</a></li>
+                <li><a href="#clubes">Clubes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>  
+                <li><a href="index.html">Login</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="title">
             <div>
-                <img src="icones\xadres.svg" alt="">
-                <img src="icones\astronauta.svg" alt="">
-                <img src="icones\olimpieda.svg" alt="">
+                <img src="assets\icones-header\xadres.svg" alt="xadres">
+                <img src="assets\icones-header\astronauta.svg" alt="astronauta">
+                <img src="assets\icones-header\medalha.svg" alt="medalha">
             </div>
             <h1>QUEM SOMOS?</h1>
         </div>
-        <div class="sobre-container">
-            <div>
-                <div class="top-sobre-container">
-                    <img src="icones\link.svg" alt="" >
-                    <h2>Shared Quicklinks</h2>
-                </div>
-                <h2>O que é o projeto firs</h2>
-                <p>Convert long links into simple bookmarks for the whole team to access. Jump in to GitHub repos, or project documentation and invite the latest prototypes, effortlessly. Even set up your new members with everything they need, much faster.</p>
-                <a href="#">Lear about Quicklinks</a>
-            </div>
-            <img src="icones\foto 1.svg" alt="" class="imagens">
-        </div>
-        <div class="sobre-container">
-            <img src="icones\foto 2.svg" alt="" class="imagens">
-            <div>
-                <div class="top-sobre-container">
-                    <img src="icones\link.svg" alt="">
-                    <h2>Shared Snippets</h2>
-                </div>
-                <h2>Como tudo começou?</h2>
-                <p>Write faster by using Shared Snippets to store and insert the text your teams use most. Create canned responses to help with support, easily give code reviews in a set format and embed consistency across documentation.</p>
-                <a href="#">Learn more about Snippets</a>
-            </div>
-        </div>
-        <div class="sobre-container">
-            <div>
+        <section class="sobre">
+            <div class="sobre-container">
                 <div>
-                    <img src="" alt="">
-                    <h2>Shared Snippets</h2>
+                    <div class="top-sobre-container">
+                        <img src="assets\icones-formatação\link.svg" alt="link" >
+                        <h2>Shared Quicklinks</h2>
+                    </div>
+                    <h3>O que é o projeto firs</h3>
+                    <p>Convert long links into simple bookmarks for the whole team to access. Jump in to GitHub repos, or project documentation and invite the latest prototypes, effortlessly. Even set up your new members with everything they need, much faster.</p>
+                    <a href="#">Lear about Quicklinks</a>
                 </div>
-                <h2>Aonde queremos chegar?</h2>
-                <p>Write faster by using Shared Snippets to store and insert the text your teams use most. Create canned responses to help with support, easily give code reviews in a set format and embed consistency across documentation.</p>
-                <a href="#">Learn more about Snippets</a>
+                <img src="assets\imagens\foto 1.svg" alt="foto 1" class="imagens">
             </div>
-            <img src="icones\foto 3.svg" alt="" class="imagens">
-        </div>
+            <div class="sobre-container">
+                <img src="assets\imagens\foto 2.svg" alt="foto 2" class="imagens">
+                <div>
+                    <div class="top-sobre-container">
+                        <img src="assets\icones-formatação\text-icon.svg" alt="text-icon">
+                        <h2>Shared Snippets</h2>
+                    </div>
+                    <h3>Como tudo começou?</h3>
+                    <p>Write faster by using Shared Snippets to store and insert the text your teams use most. Create canned responses to help with support, easily give code reviews in a set format and embed consistency across documentation.</p>
+                    <a href="#">Learn more about Snippets</a>
+                </div>
+            </div>
+            <div class="sobre-container">
+                <div>
+                    <div class="top-sobre-container">
+                        <img src="assets\icones-formatação\text-icon.svg" alt="text-icon">
+                        <h2>Shared Snippets</h2>
+                    </div>
+                    <h3>Aonde queremos chegar?</h3>
+                    <p>Write faster by using Shared Snippets to store and insert the text your teams use most. Create canned responses to help with support, easily give code reviews in a set format and embed consistency across documentation.</p>
+                    <a href="#">Learn more about Snippets</a>
+                </div>
+                <img src="assets\imagens\foto 3.svg" alt="foto 3" class="imagens">
+            </div>
+        </section>
+        <section class="caixas">
+            <div class="container">
+                <img src="icones\livro.svg" alt="">
+                <h3>Manifest</h3>
+                <p>Stay on top of your growing company by making it easy to search, and get to know, your teammates.</p>
+            </div>
+            <div class="container">
+                <img src="icones\stack.svg" alt="">
+                <h3>Regulamento dos Clubes</h3>
+                <p>Keep your visuals consistently on-brand with easily accessible colors, icons, screenshots and more, for the whole team.</p>
+            </div>
+            <div class="container">
+                <img src="icones\alert.svg" alt="">
+                <h3>Report bugs</h3>
+                <p>Set up template bug report forms to give timely and actionable feedback on features and projects in development.</p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="mail">
+            <div class="text">
+                <h1>#BeFirst</h1>
+                <h4>Uma nova experiência de aprendizado</h4>
+            </div>
+            <div class="email">
+                <h1>Inscreva-se para receber nossas novidades <span>Exclusivas</span></h1>
+                <div>
+                    <textarea name="e-mail" id="mail">E-Mail</textarea>
+                    <button>
+                        <img src="assets\icones-formatação\seta-direita.svg" alt="seta-direita">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="item">
+                <h2>Nossos Clubes</h2>
+                <ul>
+                    <li><a href="">Xadrez</a></li>
+                    <li><a href="">Astronomia</a></li>
+                    <li><a href="">Olimpiada</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Ideias</h2>
+                <ul>
+                    <li><a href="">Porque fazemos isso?</a></li>
+                    <li><a href="">Qual nosso objetivo?</a></li>
+                    <li><a href="">Para quem nosso projeto se destina?</a></li>
+                    <li><a href="">Saiba Mais</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Junte-se a nós</h2>
+                <ul>
+                    <li><a href="">Seja um Membro</a></li>
+                    <li><a href="">Seja um Patrocinador</a></li>
+                    <li><a href="">Seja um Cooperador</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Ajuda</h2>
+                <ul>
+                    <li><a href="">Reclamações</a></li>
+                    <li><a href="">Perguntas Frequentes</a></li>
+                    <li><a href="">Contato com Suporte</a></li>
+                    <li><a href="">Ouvidoria</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contatos">
+            <div>
+                <img src="assets\socials\fb.svg" alt="fb">
+                <img src="assets\socials\in.svg" alt="in">
+                <img src="assets\socials\insta.svg" alt="insta">
+                <img src="assets\socials\email.svg" alt="email">
+                <img src="assets\socials\whats.svg" alt="whats">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Termos de Serviço</a>
+                </li>
+                <li>
+                    <a href="#">Segurança</a>
+                </li>
+                <li>
+                    <a href="#">Privacidade</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
