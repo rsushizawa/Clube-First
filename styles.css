@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .bungee-inline-regular {
     font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
 .inter-one {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -19,6 +18,8 @@ body{
     flex-direction: column;
 
     align-items: center;
+    padding: 0;
+    margin: 0;
 
     background-color: #020617;
     color: #FFFFFF;
@@ -26,7 +27,10 @@ body{
 
 header{
     width: 100vw;
+    position: fixed;
+    z-index: 10;
     background-color: #040714;
+    opacity: 50%;
 }
 
 header ul{
@@ -59,7 +63,7 @@ header a{
 }
 
 .banner h1{
-    font-family: "Bungee Inline", sans-serif;
+    font-family: "Bungee Inline";
     font-size: 72.4px;
 
     background: linear-gradient(to right, #FFFFFF, #9BD0F5);
@@ -295,10 +299,12 @@ footer{
     max-width: 400px;
 }
 .email textarea{
+    padding-top: 15px;
+    padding-left: 10px;
     border-radius: 12px;
     width: 300px;
     background-color: #0f172a;
-    color: white;
+    color: gray;
 }
 
 .send-btn{
@@ -313,6 +319,18 @@ footer{
     padding: 0;
     position: absolute;
     left: 100x;
+}
+#contatos ul{
+    list-style: none;
+}
+#contatos a{
+    font-size: 14px;
+    font-family: Inter;
+    text-decoration: none;
+    color: #595C68;
+}
+#contatos a:hover{
+    color: white;
 }
 @media  screen and (max-width: 980px) {
     .caixas{
@@ -355,4 +373,46 @@ footer{
         flex-direction: column;
         max-height: 500px;
     }
+}
+
+/*Sobre Nós*/
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+#title div{
+    display: flex;
+    gap:50px ;
+}
+#title h1{
+    font-size: 40px;
+    font-family: Bungee Inline;
+    color: #c1ddfe;
+}
+
+.sobre-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sobre-container div{
+    max-width: 400px;
+}
+;
+.sobre-container div a{
+    text-decoration: none;
+
+}
+.top-sobre-container{
+    display: flex;
+    flex-direction: row;
+}
+.imagens{
+    width: 200px;
+    padding-left: 100px;
 }
