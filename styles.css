@@ -188,7 +188,7 @@ header a{
 }
 
 .clubes .card li{
-    list-style-image: url(icones/lista.svg);
+    list-style-image: url(assets/icones-formatação/lista.svg);
     color: #FFFFFF99;
 }
 .clubes .card h5{
